@@ -108,11 +108,16 @@ public class FormularioPatrimonio extends AppCompatActivity {
 
 
 
-                      if(objQtd.getText().toString().length() == 0)
+                  if(objSerie.getText().toString().length() == 0) {
+                      Toast.makeText(this, "Informe o número de série", Toast.LENGTH_SHORT).show();
+                  }else {
+
+                      if (objQtd.getText().toString().length() == 0)
                           Toast.makeText(this, "Informe a quantidade", Toast.LENGTH_SHORT).show();
                       else
-                         salva(localConferir);
-                  
+                          salva(localConferir);
+                  }
+
               }
 
           }else{
